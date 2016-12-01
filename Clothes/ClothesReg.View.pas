@@ -18,11 +18,10 @@ type
     lbl1: TLabel;
     lbl2: TLabel;
     edtSN: TEdit;
-    btnNew: TButton;
-    BindSourceDB1: TBindSourceDB;
-    BindingsList1: TBindingsList;
-    StringGridBindSourceDB1: TStringGrid;
-    LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
+    btnNew: TSpeedButton;
+    grpEmployee: TGroupBox;
+    edt1: TEdit;
+    btn1: TSpeedButton;
     procedure btnNewClick(Sender: TObject);
     procedure btnCloseClick(Sender: TObject);
   private
@@ -72,6 +71,7 @@ begin
     if mr = mrOk  then
     begin
       cbbClothesTypes.Items.AddObject(frmClothesTypeReg.ClothesType.Name, frmClothesTypeReg.ClothesType);
+      cbbClothesTypes.ItemIndex := cbbClothesTypes.Items.IndexOf(frmClothesTypeReg.ClothesType.Name);
     end;
   finally
     FreeAndNil(frmClothesTypeReg);

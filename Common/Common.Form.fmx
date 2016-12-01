@@ -39,7 +39,6 @@ object CommonForm: TCommonForm
       Size.PlatformDefault = False
       TabOrder = 0
       Text = 'OK'
-      OnClick = btnCloseClick
     end
   end
 end

@@ -22,10 +22,43 @@ object dmEmployees: TdmEmployees
     Aggregates = <>
     Params = <>
     ProviderName = 'prvEmployees'
-    BeforePost = cdsEmployeesBeforePost
     AfterPost = cdsEmployeesAfterPost
     Left = 112
     Top = 136
+    object cdsEmployeesID: TLargeintField
+      FieldName = 'ID'
+      Required = True
+    end
+    object cdsEmployeesFIRSTNAME: TWideStringField
+      FieldName = 'FIRSTNAME'
+      Size = 256
+    end
+    object cdsEmployeesMIDDLENAME: TWideStringField
+      FieldName = 'MIDDLENAME'
+      Size = 256
+    end
+    object cdsEmployeesLASTNAME: TWideStringField
+      FieldName = 'LASTNAME'
+      Size = 256
+    end
+    object cdsEmployeesBIRTHDAY: TDateField
+      FieldName = 'BIRTHDAY'
+    end
+    object cdsEmployeesDEPARMENT_ID: TLargeintField
+      FieldName = 'DEPARMENT_ID'
+    end
+    object cdsEmployeesIS_ACTIVE: TSmallintField
+      FieldName = 'IS_ACTIVE'
+    end
+    object sqltmstmpfldEmployeesUPDTM: TSQLTimeStampField
+      FieldName = 'UPDTM'
+    end
+    object sqltmstmpfldEmployeesREGTM: TSQLTimeStampField
+      FieldName = 'REGTM'
+    end
+    object cdsEmployeesUSER_ID: TLargeintField
+      FieldName = 'USER_ID'
+    end
   end
   object srcEmployees: TDataSource
     DataSet = cdsEmployees

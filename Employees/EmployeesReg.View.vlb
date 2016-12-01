@@ -10,9 +10,6 @@ Visible=False
 Coordinates=10,107,40,33
 Visible=False
 
-[PrototypeBindSource1]
-Coordinates=580,80,125,141
-
 [lbl2]
 Coordinates=160,107,40,33
 Visible=False
@@ -30,27 +27,30 @@ Coordinates=196,161,61,33
 Visible=False
 
 []
-Coordinates=377,1,82,33
-
-[BindingsList1]
-Coordinates=154,170,82,33
-
-[edtLastName]
-Coordinates=221,10,79,51
-
-[edtFistName]
-Coordinates=222,343,76,51
-
-[edtMiddleName]
-Coordinates=215,232,90,51
-
-[edtBirthday]
-Coordinates=225,121,71,51
-
-[BindSourceDB1]
-Coordinates=1060,130,92,51
+Coordinates=81,70,82,33
 Visible=True
 
+[edtLastName]
+Coordinates=221,232,79,51
+Visible=True
+
+[edtMiddleName]
+Coordinates=215,10,90,51
+
 [dmEmployees.cdsEmployees]
-Visible=False
+
+[edtFirstName]
+Coordinates=220,121,80,51
+
+[chkIsActive]
+Coordinates=10,309,71,51
+
+[actSave]
+Coordinates=248,87,53,33
+
+[edtBirthday]
+Coordinates=107,309,115,51
+
+[actlst1]
+Coordinates=157,203,46,33
 

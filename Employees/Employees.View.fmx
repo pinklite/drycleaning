@@ -1,32 +1,42 @@
 inherited EmployeesForm: TEmployeesForm
-  OnCreate = FormCreate
   DesignerMasterStyle = 0
-  object btnEdit: TButton
-    Position.X = 336.000000000000000000
-    Position.Y = 192.000000000000000000
-    TabOrder = 1
-    Text = 'btnEdit'
-    OnClick = btnEditClick
-  end
   object GridBindSourceDB1: TGrid
     CanFocus = True
     ClipChildren = True
     Position.X = 8.000000000000000000
-    Position.Y = 256.000000000000000000
+    Position.Y = 128.000000000000000000
     Size.Width = 889.000000000000000000
-    Size.Height = 300.000000000000000000
+    Size.Height = 428.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 3
+    TabOrder = 2
     RowCount = 4
     Viewport.Width = 885.000000000000000000
-    Viewport.Height = 275.000000000000000000
+    Viewport.Height = 403.000000000000000000
   end
-  object btnNew: TButton
-    Position.X = 456.000000000000000000
-    Position.Y = 192.000000000000000000
-    TabOrder = 6
-    Text = 'btnNew'
-    OnClick = btnNewClick
+  object tlb1: TToolBar
+    Size.Width = 900.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    object btnNew: TSpeedButton
+      Align = Left
+      Size.Width = 50.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'addtoolbutton'
+      Text = 'btnNew'
+      OnClick = btnNewClick
+    end
+    object btnEdit: TSpeedButton
+      Align = Left
+      Position.X = 50.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'composetoolbutton'
+      Text = 'btn1'
+      OnClick = btnEditClick
+    end
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = dmEmployees.cdsEmployees

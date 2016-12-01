@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.504,=C:\Users\Zafar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.318,=C:\Users\Zafar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.006,=C:\Users\Zafar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.120,=C:\Users\Zafar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.439,=C:\Users\Zafar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.689,=C:\Users\Zafar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.656,C:\Projects\drycleaning\Test\Test.View.pas=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.318,=C:\Users\Zafar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.504,=C:\Users\Zafar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.006,=C:\Users\Zafar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.439,=C:\Users\Zafar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.120,=C:\Users\Zafar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.656,C:\Projects\drycleaning\Unit1.pas=C:\Projects\drycleaning\Test\Test.View.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.523,=C:\Projects\drycleaning\Connection\Connection.Model.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.798,=C:\Projects\drycleaning\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.309,C:\Projects\drycleaning\Test.dproj=C:\Users\Zafar\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.656,C:\Projects\drycleaning\Test\Test.View.fmx=C:\Projects\drycleaning\Unit1.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.656,C:\Projects\drycleaning\Unit1.fmx=C:\Projects\drycleaning\Test\Test.View.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.309,C:\Users\Zafar\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Projects\drycleaning\Test.dproj</Transaction>
   </Transactions>
 </BorlandProject>

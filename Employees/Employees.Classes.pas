@@ -2,6 +2,9 @@ unit Employees.Classes;
 
 interface
 
+uses
+  System.SysUtils;
+
 type
   TEmployee = class
   private
@@ -23,6 +26,7 @@ type
     procedure SetDepartmentID(const Value: Integer);
     procedure SetMiddleName(const Value: string);
     procedure SetFirstName(const Value: string);
+    function GetIsValid: Boolean;
   public
     property ID: Integer read FID write SetID;
     property FirstName: string read FFirstName write SetFirstName;
@@ -33,6 +37,8 @@ type
     property RegTm: TDateTime read FRegTm write SetRegTm;
     property UpdTm: TDateTime read FUpdTm write SetUpdTm;
     property DepartmentID: Integer read FDepartmentID write SetDepartmentID;
+
+    property IsValid: Boolean read GetIsValid;
 
     constructor Create; overload;
     constructor Create(
@@ -64,6 +70,11 @@ begin
   FMiddleName := AMiddleName;
   FBirthday := ABirthday;
   FDepartmentID := ADepartmentID;
+end;
+
+function TEmployee.GetIsValid: Boolean;
+begin
+  Result := (Trim(FLastName) <> '') or (Trim(FFirstName) <> '') or (Trim(FMiddleName) <> '');
 end;
 
 procedure TEmployee.SetBirthday(const Value: TDate);

@@ -1,6 +1,5 @@
 inherited ClothesForm: TClothesForm
   ClientWidth = 800
-  OnCreate = FormCreate
   DesignerMasterStyle = 0
   inherited pnlFooter: TPanel
     Size.Width = 792.000000000000000000
@@ -23,32 +22,40 @@ inherited ClothesForm: TClothesForm
     CanFocus = True
     ClipChildren = True
     Position.X = 8.000000000000000000
-    Position.Y = 136.000000000000000000
+    Position.Y = 40.000000000000000000
     Size.Width = 785.000000000000000000
-    Size.Height = 425.000000000000000000
+    Size.Height = 521.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 6
     Viewport.Width = 781.000000000000000000
-    Viewport.Height = 400.000000000000000000
+    Viewport.Height = 496.000000000000000000
   end
-  object btnNew: TButton
-    Position.X = 8.000000000000000000
-    Position.Y = 8.000000000000000000
-    TabOrder = 9
-    Text = 'btnNew'
-    OnClick = btnNewClick
+  object tlb1: TToolBar
+    Size.Width = 800.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    object btnNew: TSpeedButton
+      Align = Left
+      Size.Width = 50.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'addtoolbuttonbordered'
+      Text = 'btnNew'
+      OnClick = btnNewClick
+    end
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = dmClothes.cdsClothes
     ScopeMappings = <>
-    Left = 688
-    Top = 80
+    Left = 304
+    Top = 304
   end
   object BindingsList1: TBindingsList
     Methods = <>
     OutputConverters = <>
-    Left = 580
-    Top = 77
+    Left = 188
+    Top = 301
     object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1

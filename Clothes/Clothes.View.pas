@@ -20,7 +20,8 @@ type
     StringGridBindSourceDB1: TStringGrid;
     BindingsList1: TBindingsList;
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
-    btnNew: TButton;
+    tlb1: TToolBar;
+    btnNew: TSpeedButton;
     procedure FormCreate(Sender: TObject);
     procedure btnNewClick(Sender: TObject);
   private

@@ -34,8 +34,8 @@ end;
 
 procedure TCommonForm.FormCreate(Sender: TObject);
 begin
-  btnOk.ModalResult := mrOk;
-  btnClose.ModalResult := mrCancel;
+  btnOk.ModalResult     := mrOk;
+  btnClose.ModalResult  := mrCancel;
 end;
 
 end.

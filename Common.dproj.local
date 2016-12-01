@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.490,C:\Projects\drycleaning\Common.dproj=C:\Users\Zafar\Documents\Embarcadero\Studio\Projects\Package1.dproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.292,C:\Projects\drycleaning\Common\Common.Utils.pas=C:\Projects\drycleaning\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.349,C:\Projects\drycleaning\Connection\Common.Form.fmx=C:\Projects\drycleaning\Common\Common.Form.fmx</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.135,=C:\Projects\drycleaning\Unit4.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.042,C:\Projects\drycleaning\Common\Common.Consts.pas=C:\Projects\drycleaning\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.173,C:\Projects\drycleaning\Unit2.pas=C:\Projects\drycleaning\Connection\Common.Form.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.725,C:\Projects\drycleaning\Common\Common.Model.pas=C:\Projects\drycleaning\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.559,=C:\Projects\drycleaning\Unit2.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.123,=fmx.dcp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.596,=C:\Projects\drycleaning\Unit2.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.193,=rtl.dcp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.268,C:\Projects\drycleaning\Common\Common.DataModule.dfm=C:\Projects\drycleaning\Unit4.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.472,C:\Projects\drycleaning\Common\Common.Types.pas=C:\Projects\drycleaning\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.173,C:\Projects\drycleaning\Unit2.fmx=C:\Projects\drycleaning\Connection\Common.Form.fmx</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.781,C:\Projects\drycleaning\Common\Common.DataModule.pas=</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.267,C:\Projects\drycleaning\Common\Common.DataModule.pas=C:\Projects\drycleaning\Unit4.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.997,=C:\Projects\drycleaning\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.349,C:\Projects\drycleaning\Connection\Common.Form.pas=C:\Projects\drycleaning\Common\Common.Form.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.930,=C:\Projects\drycleaning\Unit1.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.930,=C:\Projects\drycleaning\Unit1.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.119,=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.930,=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.472,C:\Projects\drycleaning\Unit1.pas=C:\Projects\drycleaning\Common\Common.Types.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.997,=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.123,=fmx.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.173,C:\Projects\drycleaning\Connection\Common.Form.fmx=C:\Projects\drycleaning\Unit2.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.596,=C:\Projects\drycleaning\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.490,C:\Users\Zafar\Documents\Embarcadero\Studio\Projects\Package1.dproj=C:\Projects\drycleaning\Common.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.559,=C:\Projects\drycleaning\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.725,C:\Projects\drycleaning\Unit1.pas=C:\Projects\drycleaning\Common\Common.Model.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.349,C:\Projects\drycleaning\Common\Common.Form.fmx=C:\Projects\drycleaning\Connection\Common.Form.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.268,C:\Projects\drycleaning\Unit4.dfm=C:\Projects\drycleaning\Common\Common.DataModule.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.781,C:\Projects\drycleaning\Common\Common.DataModule.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.135,=C:\Projects\drycleaning\Unit4.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.267,C:\Projects\drycleaning\Unit4.pas=C:\Projects\drycleaning\Common\Common.DataModule.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.292,C:\Projects\drycleaning\Unit1.pas=C:\Projects\drycleaning\Common\Common.Utils.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.042,C:\Projects\drycleaning\Unit1.pas=C:\Projects\drycleaning\Common\Common.Consts.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.173,C:\Projects\drycleaning\Connection\Common.Form.pas=C:\Projects\drycleaning\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.349,C:\Projects\drycleaning\Common\Common.Form.pas=C:\Projects\drycleaning\Connection\Common.Form.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.193,=rtl.dcp</Transaction>
   </Transactions>
 </BorlandProject>

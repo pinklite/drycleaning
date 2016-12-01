@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.910,C:\Projects\drycleaning\Employees\Employees.View.fmx=C:\Projects\drycleaning\Unit2.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.239,C:\Projects\drycleaning\Employees\EmployeesReg.View.fmx=C:\Projects\drycleaning\Unit2.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.643,C:\Projects\drycleaning\Employees\Employees.Model.pas=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.910,C:\Projects\drycleaning\Employees\Employees.View.pas=C:\Projects\drycleaning\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.659,C:\Projects\drycleaning\Employees\Employees.ViewModel.pas=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.705,=Common.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.106,C:\Projects\drycleaning\Employees\Employees.Classes.pas=C:\Projects\drycleaning\Unit1.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.282,=Database.dcp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.941,=C:\Projects\drycleaning\Unit2.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.959,=Departments.dcp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.613,=C:\Projects\drycleaning\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.634,=C:\Projects\drycleaning\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.705,=Common.dcp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.065,C:\Users\Zafar\Documents\Embarcadero\Studio\Projects\Package1.dproj=C:\Projects\drycleaning\Employees.dproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.910,C:\Projects\drycleaning\Unit2.pas=C:\Projects\drycleaning\Employees\Employees.View.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.414,=C:\Projects\drycleaning\Unit2.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.239,C:\Projects\drycleaning\Unit2.pas=C:\Projects\drycleaning\Employees\EmployeesReg.View.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.959,=Departments.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.239,C:\Projects\drycleaning\Employees\EmployeesReg.View.pas=C:\Projects\drycleaning\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.133,C:\Projects\drycleaning\Employees\Employees.DataModule.dfm=C:\Projects\drycleaning\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.133,C:\Projects\drycleaning\Employees\Employees.DataModule.pas=C:\Projects\drycleaning\Unit1.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.934,=rtl.dcp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.643,C:\Projects\drycleaning\Unit1.pas=C:\Projects\drycleaning\Employees\Employees.Model.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.239,C:\Projects\drycleaning\Unit2.fmx=C:\Projects\drycleaning\Employees\EmployeesReg.View.fmx</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.133,C:\Projects\drycleaning\Unit1.dfm=C:\Projects\drycleaning\Employees\Employees.DataModule.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.910,C:\Projects\drycleaning\Unit2.fmx=C:\Projects\drycleaning\Employees\Employees.View.fmx</Transaction>
     <Transaction>1899.12.30 00:00:00.000.753,=C:\Projects\drycleaning\Unit1.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.086,=C:\Projects\drycleaning\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.133,C:\Projects\drycleaning\Unit1.pas=C:\Projects\drycleaning\Employees\Employees.DataModule.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.659,C:\Projects\drycleaning\Unit1.pas=C:\Projects\drycleaning\Employees\Employees.ViewModel.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.106,C:\Projects\drycleaning\Unit1.pas=C:\Projects\drycleaning\Employees\Employees.Classes.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.613,=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.065,C:\Projects\drycleaning\Employees.dproj=C:\Users\Zafar\Documents\Embarcadero\Studio\Projects\Package1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.634,=C:\Projects\drycleaning\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>

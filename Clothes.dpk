@@ -35,7 +35,8 @@ requires
   dsnap,
   bindengine,
   bindcomp,
-  bindcompfmx;
+  bindcompfmx,
+  Employees;
 
 contains
   Clothes.View in 'Clothes\Clothes.View.pas' {ClothesForm},

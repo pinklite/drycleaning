@@ -69,10 +69,10 @@ end;
 
 procedure TdmClothes.cdsClothesBeforePost(DataSet: TDataSet);
 begin
-  if cdsClothes.State = dsInsert then
-  begin
-    cdsClothes.FieldByName('ID').AsInteger := FClothesModel.GetClothesNextId;
-  end;
+//  if cdsClothes.State = dsInsert then
+//  begin
+//    cdsClothes.FieldByName('ID').AsInteger := FClothesModel.GetClothesNextId;
+//  end;
 end;
 
 procedure TdmClothes.cdsClothesTypesAfterPost(DataSet: TDataSet);
@@ -82,10 +82,10 @@ end;
 
 procedure TdmClothes.cdsClothesTypesBeforePost(DataSet: TDataSet);
 begin
-  if cdsClothesTypes.State = dsInsert then
-  begin
-    cdsClothesTypes.FieldByName('ID').AsInteger := FClothesModel.GetClothesTypeNextId;
-  end;
+//  if cdsClothesTypes.State = dsInsert then
+//  begin
+//    cdsClothesTypes.FieldByName('ID').AsInteger := FClothesModel.GetClothesTypeNextId;
+//  end;
 end;
 
 procedure TdmClothes.DataModuleCreate(Sender: TObject);
@@ -116,8 +116,10 @@ begin
 
   if AnOperation = opInsert then
   begin
+    AClothes.ID := FClothesModel.GetClothesNextId;
+
     ACds.Insert;
-//    ACds.FieldByName('ID').AsInteger := FClothesModel.GetClothesNextId;
+    ACds.FieldByName('ID').AsInteger := AClothes.ID;
     ACds.FieldByName('REGTM').AsDateTime := Now;
   end
   else
@@ -139,7 +141,10 @@ begin
 
   if AnOperation = opInsert then
   begin
+    AClothesType.ID := FClothesModel.GetClothesTypeNextId;
+
     cdsClothesTypes.Insert;
+    cdsClothesTypes.FieldByName('ID').AsInteger :=  AClothesType.ID;
   end
   else
   begin

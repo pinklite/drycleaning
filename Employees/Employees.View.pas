@@ -9,22 +9,22 @@ uses
   Employees.DataModule, Employees.ViewModel, EmployeesReg.View, System.Rtti,
   FMX.Grid.Style, Fmx.Bind.Grid, System.Bindings.Outputs, Fmx.Bind.Editors,
   Data.Bind.EngExt, Fmx.Bind.DBEngExt, Data.Bind.Components, Data.Bind.Grid,
-  FMX.ScrollBox, FMX.Grid, Data.Bind.DBScope, Data.DB;
+  FMX.ScrollBox, FMX.Grid, Data.Bind.DBScope, Data.DB, Database.Types;
 
 type
   TEmployeesForm = class(TCommonForm)
-    btnEdit: TButton;
     BindSourceDB1: TBindSourceDB;
     GridBindSourceDB1: TGrid;
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
     BindingsList1: TBindingsList;
-    btnNew: TButton;
+    tlb1: TToolBar;
+    btnNew: TSpeedButton;
+    btnEdit: TSpeedButton;
     procedure btnEditClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure btnNewClick(Sender: TObject);
   private
     FViewModel: TEmployeesViewModel;
-
     procedure RegFormShow;
     { Private declarations }
   public
@@ -42,13 +42,16 @@ implementation
 procedure TEmployeesForm.btnEditClick(Sender: TObject);
 begin
   inherited;
+
+  FViewModel.Operation := opUpdate;
   RegFormShow;
 end;
 
 procedure TEmployeesForm.btnNewClick(Sender: TObject);
 begin
   inherited;
-  dmEmployees.cdsEmployees.Append;
+
+  FViewModel.Operation := opInsert;
   RegFormShow;
 end;
 
@@ -65,10 +68,7 @@ begin
   frmEmployeesReg := TfrmEmployeesReg.Create(Self, FViewModel);
   try
     mr := frmEmployeesReg.ShowModal;
-    if dmEmployees.cdsEmployees.State in dsEditModes then
-      if mr = mrOk
-        then dmEmployees.cdsEmployees.Post
-        else dmEmployees.cdsEmployees.Cancel;
+    if mr = mrOk then FViewModel.SaveEmployee;
   finally
     frmEmployeesReg.Free;
   end;
