@@ -1,0 +1,127 @@
+unit EmployeesReg.View;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  System.Bindings.Helper, System.Bindings.Expression,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  Common.Form, FMX.StdCtrls, FMX.Controls.Presentation, FMX.Edit,
+  Employees.Classes, Employees.ViewModel,
+  Data.Bind.Components, Data.Bind.ObjectScope, Data.Bind.EngExt,
+  Fmx.Bind.DBEngExt, System.Rtti, System.Bindings.Outputs, Fmx.Bind.Editors;
+
+type
+  TfrmEmployeesReg = class(TCommonForm)
+    lbl1: TLabel;
+    lbl2: TLabel;
+    lbl3: TLabel;
+    lbl4: TLabel;
+    edtLastName: TEdit;
+    edtFistName: TEdit;
+    edtMiddleName: TEdit;
+    edtBirthday: TEdit;
+    PrototypeBindSource1: TPrototypeBindSource;
+    BindingsList1: TBindingsList;
+    lnkcntrltfld1: TLinkControlToField;
+    lnkcntrltfld2: TLinkControlToField;
+    lnkcntrltfld3: TLinkControlToField;
+    lnkcntrltfld4: TLinkControlToField;
+    procedure PrototypeBindSource1CreateAdapter(Sender: TObject;
+      var ABindSourceAdapter: TBindSourceAdapter);
+    procedure FormCreate(Sender: TObject);
+  private
+    FViewModel: TEmployeesViewModel;
+    procedure SetViewModel(const Value: TEmployeesViewModel);
+    { Private declarations }
+  public
+    property ViewModel: TEmployeesViewModel read FViewModel; // write SetViewModel;
+
+    constructor Create(AOwner: TComponent; AViewModel: TEmployeesViewModel); reintroduce;
+    { Public declarations }
+  end;
+
+var
+  frmEmployeesReg: TfrmEmployeesReg;
+
+implementation
+
+{$R *.fmx}
+
+constructor TfrmEmployeesReg.Create(AOwner: TComponent;
+  AViewModel: TEmployeesViewModel);
+begin
+  FViewModel := AViewModel;
+  inherited Create(AOwner);
+end;
+
+procedure TfrmEmployeesReg.FormCreate(Sender: TObject);
+var
+  AFieldDefs: TGeneratorFieldDef;
+  ABindingExpression: TBindingExpression;
+begin
+  inherited;
+
+  {
+    property ID: Integer read FID write SetID;
+    property : string read FFirstName write SetFirstName;
+    property : string read FLastName write SetLastName;
+    property : string read FMiddleName write SetMiddleName;
+    property : TDate read FBirthday write SetBirthday;
+    property : Boolean read FIsActive write SetIsActive;
+    property : TDateTime read FRegTm write SetRegTm;
+    property : TDateTime read FUpdTm write SetUpdTm;
+    property : Integer read FDepartmentID write SetDepartmentID;
+  }
+
+  AFieldDefs := PrototypeBindSource1.FieldDefs.AddFieldDef;
+  AFieldDefs.FieldType := ftInteger;
+  AFieldDefs.Name := 'ID';
+  AFieldDefs := PrototypeBindSource1.FieldDefs.AddFieldDef;
+  AFieldDefs.FieldType := ftString;
+  AFieldDefs.Name := 'FirstName';
+  AFieldDefs := PrototypeBindSource1.FieldDefs.AddFieldDef;
+  AFieldDefs.FieldType := ftString;
+  AFieldDefs.Name := 'LastName';
+  AFieldDefs := PrototypeBindSource1.FieldDefs.AddFieldDef;
+  AFieldDefs.FieldType := ftString;
+  AFieldDefs.Name := 'MiddleName';
+  AFieldDefs := PrototypeBindSource1.FieldDefs.AddFieldDef;
+  AFieldDefs.FieldType := ftDate;
+  AFieldDefs.Name := 'Birthday';
+  AFieldDefs := PrototypeBindSource1.FieldDefs.AddFieldDef;
+  AFieldDefs.FieldType := ftBoolean;
+  AFieldDefs.Name := 'IsActive';
+  AFieldDefs := PrototypeBindSource1.FieldDefs.AddFieldDef;
+  AFieldDefs.FieldType := ftDateTime;
+  AFieldDefs.Name := 'RegTm';
+  AFieldDefs := PrototypeBindSource1.FieldDefs.AddFieldDef;
+  AFieldDefs.FieldType := ftDateTime;
+  AFieldDefs.Name := 'UpdTm';
+  AFieldDefs := PrototypeBindSource1.FieldDefs.AddFieldDef;
+  AFieldDefs.FieldType := ftInteger;
+  AFieldDefs.Name := 'DepartmentID';
+
+  ABindingExpression := TBindings.CreateManagedBinding(
+    [TBindings.CreateAssociationScope([Associate(FViewModel.Employee, 'Employee')])], 'Employee.LastName',
+    [TBindings.CreateAssociationScope([Associate(edtLastName, 'edtLastName')])], 'edtLastName.Text',
+    nil
+  )
+end;
+
+procedure TfrmEmployeesReg.PrototypeBindSource1CreateAdapter(Sender: TObject;
+  var ABindSourceAdapter: TBindSourceAdapter);
+begin
+//  inherited;
+  ABindSourceAdapter := TObjectBindSourceAdapter<TEmployee>.Create(PrototypeBindSource1,
+                                                                 FViewModel.Employee,
+                                                                 False);
+  ABindSourceAdapter.AutoPost := True;
+end;
+
+procedure TfrmEmployeesReg.SetViewModel(const Value: TEmployeesViewModel);
+begin
+  FViewModel := Value;
+end;
+
+end.

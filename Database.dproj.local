@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.262,C:\Projects\drycleaning\Database\Database.Model.pas=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.187,=C:\Projects\drycleaning\Connection\Connection.Utils.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.400,C:\Projects\drycleaning\Connection\Connection.Utils.pas=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.813,=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.475,=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.164,=DBXFirebirdDriver.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.268,C:\Projects\drycleaning\Connection\Connection.Types.pas=C:\Projects\drycleaning\Connection\Connection.Utils.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.564,=Common.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.201,=dbexpress.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.190,=dbrtl.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.139,C:\Projects\drycleaning\Connection\Connection.DataModule.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.775,C:\Projects\drycleaning\Connection\Connection.DataModule.pas=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.740,=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.796,C:\Projects\drycleaning\Database.dproj=C:\Projects\drycleaning\Connection.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.916,C:\Projects\drycleaning\Database\Database.Datamodule.pas=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.916,C:\Projects\drycleaning\Database\Database.Datamodule.dfm=C:\Projects\drycleaning\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.268,C:\Projects\drycleaning\Connection\Connection.Model.pas=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.196,=DbxCommonDriver.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.416,C:\Projects\drycleaning\Connection.dproj=C:\Users\Zafar\Documents\Embarcadero\Studio\Projects\Package1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.385,=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.056,=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.465,C:\Projects\drycleaning\Unit1.pas=C:\Projects\drycleaning\Database\Database.Types.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.744,=rtl.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.775,C:\Projects\drycleaning\Connection\Connection.DataModule.dfm=C:\Projects\drycleaning\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.552,=C:\Projects\drycleaning\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,26 @@
+unit Departments.ViewModel;
+
+interface
+
+uses
+  Departments.Model;
+
+type
+  TDepartmentsViewModel = class
+  private
+    FModel: TDepartmentModel;
+  public
+    constructor Create(AModel: TDepartmentModel);
+  end;
+
+implementation
+
+{ TDepartmentsViewModel }
+
+constructor TDepartmentsViewModel.Create(AModel: TDepartmentModel);
+begin
+  inherited Create;
+  FModel := AModel;
+end;
+
+end.

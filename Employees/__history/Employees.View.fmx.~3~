@@ -1,0 +1,3 @@
+inherited frmEmployees: TfrmEmployees
+  DesignerMasterStyle = 0
+end

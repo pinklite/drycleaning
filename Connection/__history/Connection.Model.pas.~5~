@@ -1,0 +1,62 @@
+unit Connection.Model;
+
+interface
+
+uses
+  System.SysUtils, System.IniFiles,
+  Data.DB, Data.SqlExpr,
+  Common.Consts, Common.Model;
+
+type
+  TConnectionModel = class
+  private
+    class var FHost: string;
+    class var FPort: Word;
+    class var FDatabase: string;
+    procedure SetHost(const Value: string);
+    class procedure SetPort(const Value: Word); static;
+    class procedure SetDatabase(const Value: string); static;
+
+    class procedure Init;
+  public
+    class property Host: string read FHost write SetHost;
+    class property Port: Word read FPort write SetPort;
+    class property Database: string read FDatabase write SetDatabase;
+
+
+  end;
+
+implementation
+
+{ TConnectionModel }
+
+class procedure TConnectionModel.Init;
+var
+  AConfFile: TIniFile;
+begin
+  AConfFile := TIniFile.Create(TCommonModel.ConfigFileName);
+  try
+    FHost := AConfFile.ReadString(CONF_FILE_DB_SECTION, 'Host', 'localhost');
+    FPort := AConfFile.ReadInteger(CONF_FILE_DB_SECTION, 'Port', 3050);
+    FDatabase := AConfFile.ReadString(CONF_FILE_DB_SECTION, 'Database', '');
+  finally
+    AConfFile.Free;
+  end;
+end;
+
+class procedure TConnectionModel.SetDatabase(const Value: string);
+begin
+  FDatabase := Value;
+end;
+
+procedure TConnectionModel.SetHost(const Value: string);
+begin
+  FHost := Value;
+end;
+
+class procedure TConnectionModel.SetPort(const Value: Word);
+begin
+  FPort := Value;
+end;
+
+end.

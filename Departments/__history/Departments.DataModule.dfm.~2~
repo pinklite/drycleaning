@@ -1,0 +1,10 @@
+object DataModule2: TDataModule2
+  OldCreateOrder = False
+  Height = 339
+  Width = 404
+  object sqlds1: TSQLDataSet
+    Params = <>
+    Left = 184
+    Top = 152
+  end
+end

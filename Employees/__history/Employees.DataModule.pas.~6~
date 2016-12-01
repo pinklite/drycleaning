@@ -1,0 +1,39 @@
+unit Employees.DataModule;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Data.FMTBcd, Data.DB, Datasnap.DBClient,
+  Datasnap.Provider, Data.SqlExpr, Database.Model, Employees.Model;
+
+type
+  TdmEmployees = class(TDataModule)
+    sqldsEmployees: TSQLDataSet;
+    prvEmployees: TDataSetProvider;
+    cdsEmployees: TClientDataSet;
+    srcEmployees: TDataSource;
+    procedure DataModuleCreate(Sender: TObject);
+  private
+    FModel: TEmployeesModel;
+    { Private declarations }
+  public
+    property Model: TEmployeesModel read FModel;
+    { Public declarations }
+  end;
+
+var
+  dmEmployees: TdmEmployees;
+
+implementation
+
+{%CLASSGROUP 'FMX.Controls.TControl'}
+
+{$R *.dfm}
+
+procedure TdmEmployees.DataModuleCreate(Sender: TObject);
+begin
+  sqldsEmployees.SQLConnection := TDatabaseModel.SQLConnection;
+  sqldsEmployees.CommandText := t
+end;
+
+end.

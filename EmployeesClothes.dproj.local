@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.959,C:\Projects\drycleaning\Unit2.pas=C:\Projects\drycleaning\EmployeesClothes\EmployeesClothes.View.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.475,=C:\Projects\drycleaning\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.657,=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.956,=Database.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.432,C:\Users\Zafar\Documents\Embarcadero\Studio\Projects\Package1.dproj=C:\Projects\drycleaning\EmployeesClothes.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.632,=Common.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.868,C:\Projects\drycleaning\Unit1.dfm=C:\Projects\drycleaning\EmployeesClothes\EmployeesClothes.DataModule.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.652,=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.250,=rtl.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.959,C:\Projects\drycleaning\Unit2.fmx=C:\Projects\drycleaning\EmployeesClothes\EmployeesClothes.View.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.810,=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.621,C:\Projects\drycleaning\Unit1.pas=C:\Projects\drycleaning\EmployeesClothes\EmployeesClothes.ViewModel.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.868,C:\Projects\drycleaning\Unit1.pas=C:\Projects\drycleaning\EmployeesClothes\EmployeesClothes.DataModule.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.754,C:\Projects\drycleaning\Unit1.pas=C:\Projects\drycleaning\EmployeesClothes\EmployeesClothes.Model.pas</Transaction>
+  </Transactions>
+</BorlandProject>

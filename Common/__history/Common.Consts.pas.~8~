@@ -1,0 +1,15 @@
+unit Common.Consts;
+
+interface
+
+const
+  CONF_FILE_EXT = '.ini';
+  CONF_FILE_DB_SECTION = 'Database';
+
+  FB_USR = 'SYSDBA';
+  FB_PWD = 'masterkey';
+  FB_CHARSET = 'UTF8';
+
+implementation
+
+end.

@@ -1,0 +1,27 @@
+object dmEmployees: TdmEmployees
+  OldCreateOrder = False
+  Height = 463
+  Width = 602
+  object sqldsEmployees: TSQLDataSet
+    Params = <>
+    Left = 112
+    Top = 40
+  end
+  object prvEmployees: TDataSetProvider
+    DataSet = sqldsEmployees
+    Left = 112
+    Top = 88
+  end
+  object cdsEmployees: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'prvEmployees'
+    Left = 112
+    Top = 136
+  end
+  object srcEmployees: TDataSource
+    DataSet = cdsEmployees
+    Left = 112
+    Top = 184
+  end
+end

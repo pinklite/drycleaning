@@ -1,0 +1,29 @@
+object CommonForm: TCommonForm
+  Left = 0
+  Top = 0
+  Caption = 'Common Form'
+  ClientHeight = 600
+  ClientWidth = 900
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object pnlFooter: TPanel
+    Align = Bottom
+    Position.Y = 570.000000000000000000
+    Size.Width = 900.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object btnClose: TButton
+      Align = MostRight
+      Position.X = 800.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'btnClose'
+      OnClick = btnCloseClick
+    end
+  end
+end

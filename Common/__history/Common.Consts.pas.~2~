@@ -1,0 +1,10 @@
+unit Common.Consts;
+
+interface
+
+const
+  CONF_FILE_EXT = '.ini';
+
+implementation
+
+end.

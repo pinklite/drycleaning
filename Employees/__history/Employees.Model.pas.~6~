@@ -1,0 +1,37 @@
+unit Employees.Model;
+
+interface
+
+uses
+  Employees.Classes;
+
+type
+  TEmployeesModel = class
+  private
+    FSQLCmd: string;
+  public
+    class property SQLCmd: string read FSQLCmd;
+  end;
+
+implementation
+
+var
+  SQLCmd: string = 'select ID, FIRSTNAME, MIDDLENAME, LASTNAME, BIRTHDAY, DEPARMENT_ID, IS_ACTIVE, UPDTM, REGTM, USER_ID from EMPLOYEES';
+
+{ TEmployeesModel }
+
+initialization
+  TEmployeesModel.SQLCmd := 'select '
+                          + 'ID, '
+                          + 'FIRSTNAME, '
+                          + 'MIDDLENAME, '
+                          + 'LASTNAME, '
+                          + 'BIRTHDAY, '
+                          + 'DEPARMENT_ID, '
+                          + 'IS_ACTIVE, '
+                          + 'UPDTM, '
+                          + 'REGTM, '
+                          + 'USER_ID '
+                          + 'from EMPLOYEES';
+
+end.

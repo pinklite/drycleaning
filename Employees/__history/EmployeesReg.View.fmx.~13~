@@ -1,0 +1,186 @@
+inherited frmEmployeesReg: TfrmEmployeesReg
+  ClientHeight = 400
+  ClientWidth = 600
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  inherited pnlFooter: TPanel
+    Position.Y = 366.000000000000000000
+    Size.Width = 592.000000000000000000
+    inherited btnClose: TButton
+      Position.X = 492.000000000000000000
+    end
+    inherited btnOk: TButton
+      Position.X = 392.000000000000000000
+    end
+  end
+  object lbl1: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 56.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 110.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    Text = #1060#1072#1084#1080#1083#1080#1103
+  end
+  object lbl2: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 56.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 110.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    Text = #1048#1084#1103
+  end
+  object lbl3: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 56.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 110.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    Text = #1054#1090#1095#1077#1089#1090#1074#1086
+  end
+  object lbl4: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 56.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 110.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    Text = #1044#1072#1090#1072' '#1088#1086#1078#1076#1077#1085#1080#1103
+  end
+  object edtLastName: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 8
+    TextSettings.Font.Size = 14.000000000000000000
+    Position.X = 176.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Style, FontColor]
+  end
+  object edtFistName: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 7
+    TextSettings.Font.Size = 14.000000000000000000
+    Position.X = 176.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Style, FontColor]
+  end
+  object edtMiddleName: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    TextSettings.Font.Size = 14.000000000000000000
+    Position.X = 176.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Style, FontColor]
+  end
+  object edtBirthday: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    TextSettings.Font.Size = 14.000000000000000000
+    Position.X = 176.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Style, FontColor]
+  end
+  object chkIsActive: TCheckBox
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 176.000000000000000000
+    Position.Y = 216.000000000000000000
+    TabOrder = 13
+    Text = #1057#1090#1072#1090#1091#1089' '#1072#1082#1090#1080#1074'.'
+    TextSettings.Font.Size = 14.000000000000000000
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    FieldDefs = <
+      item
+        Name = 'ID'
+        FieldType = ftInteger
+        ReadOnly = False
+      end
+      item
+        Name = 'LastName'
+        ReadOnly = False
+      end
+      item
+        Name = 'FirstName'
+        ReadOnly = False
+      end
+      item
+        Name = 'MiddleName'
+        ReadOnly = False
+      end
+      item
+        Name = 'Birthday'
+        FieldType = ftDate
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    OnCreateAdapter = PrototypeBindSource1CreateAdapter
+    Left = 112
+    Top = 304
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 276
+    Top = 301
+    object lnkcntrltfld1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'LASTNAME'
+      Control = edtLastName
+      Track = False
+    end
+    object lnkcntrltfld2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'BIRTHDAY'
+      Control = edtBirthday
+      Track = False
+    end
+    object lnkcntrltfld3: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'MIDDLENAME'
+      Control = edtMiddleName
+      Track = False
+    end
+    object lnkcntrltfld4: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'FIRSTNAME'
+      Control = edtFistName
+      Track = False
+    end
+    object lnkcntrltfld5: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'IS_ACTIVE'
+      Control = chkIsActive
+      Track = False
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = dmEmployees.cdsEmployees
+    ScopeMappings = <>
+    Left = 472
+    Top = 304
+  end
+end

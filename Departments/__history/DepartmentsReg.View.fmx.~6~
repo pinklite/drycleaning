@@ -1,0 +1,136 @@
+inherited frmDepartmentsReg: TfrmDepartmentsReg
+  ClientHeight = 400
+  ClientWidth = 600
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  inherited pnlFooter: TPanel
+    Position.Y = 366.000000000000000000
+    Size.Width = 592.000000000000000000
+    inherited btnClose: TButton
+      Position.X = 492.000000000000000000
+    end
+    inherited btnOk: TButton
+      Position.X = 392.000000000000000000
+    end
+  end
+  object lbl1: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 24.000000000000000000
+    Text = 'ID'
+  end
+  object lbl2: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 56.000000000000000000
+    Text = 'Title'
+  end
+  object lbl3: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 88.000000000000000000
+    Text = 'Is Active'
+  end
+  object lbl4: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 128.000000000000000000
+    Text = 'Update time'
+  end
+  object edtID: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 8
+    Text = '0'
+    Position.X = 144.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object edtTitle: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 7
+    Position.X = 144.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object edtIsActive: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    Text = 'False'
+    Position.X = 144.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object edtUpdtm: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Text = '30.12.1899'
+    Position.X = 144.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    FieldDefs = <
+      item
+        Name = 'ID'
+        FieldType = ftInteger
+        ReadOnly = False
+      end
+      item
+        Name = 'Title'
+        ReadOnly = False
+      end
+      item
+        Name = 'IsActive'
+        FieldType = ftBoolean
+        ReadOnly = False
+      end
+      item
+        Name = 'UpdateTime'
+        FieldType = ftDateTime
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    Left = 288
+    Top = 184
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object lnkcntrltfld1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'ID'
+      Control = edtID
+      Track = False
+    end
+    object lnkcntrltfld2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'Title'
+      Control = edtTitle
+      Track = False
+    end
+    object lnkcntrltfld3: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'IsActive'
+      Control = edtIsActive
+      Track = False
+    end
+    object lnkcntrltfld4: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'UpdateTime'
+      Control = edtUpdtm
+      Track = False
+    end
+  end
+end

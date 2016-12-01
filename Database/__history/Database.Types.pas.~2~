@@ -1,0 +1,10 @@
+unit Database.Types;
+
+interface
+
+type
+  TOperations = (opInsert, opUpdate, opDelete);
+
+implementation
+
+end.

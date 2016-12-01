@@ -1,0 +1,40 @@
+unit Employees.Classes;
+
+interface
+
+type
+  TEmployee = class
+  private
+    FID: Integer;
+    FLastName: string;
+    FFistname: string;
+    procedure SetID(const Value: Integer);
+    procedure SetLastName(const Value: string);
+    procedure SetFistname(const Value: string);
+  public
+    property ID: Integer read FID write SetID;
+    property Fistname: string read FFistname write SetFistname;
+    property LastName: string read FLastName write SetLastName;
+
+  end;
+
+implementation
+
+{ TEmployee }
+
+procedure TEmployee.SetFistname(const Value: string);
+begin
+  FFistname := Value;
+end;
+
+procedure TEmployee.SetID(const Value: Integer);
+begin
+  FID := Value;
+end;
+
+procedure TEmployee.SetLastName(const Value: string);
+begin
+  FLastName := Value;
+end;
+
+end.

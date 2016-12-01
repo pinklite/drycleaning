@@ -1,0 +1,74 @@
+unit Clothes.Classes;
+
+interface
+
+type
+  TClothesType = class
+  private
+    FName: string;
+    FID: Integer;
+    procedure SetID(const Value: Integer);
+    procedure SetName(const Value: string);
+  public
+    property ID: Integer read FID write SetID;
+    property Name: string read FName write SetName;
+  end;
+
+  TClothes = class
+    FName: string;
+    FID: Integer;
+    FClotheType: TClothesType;
+    procedure SetID(const Value: Integer);
+    procedure SetName(const Value: string);
+  private
+    FSerialNo: string;
+    procedure SetSerialNo(const Value: string);
+  public
+    property ID: Integer read FID; // write SetID;
+    property Name: string read FName; // write SetName;
+    property SerialNo: string read FSerialNo; // write SetSerialNo;
+    property ClothesType: TClothesType read FClotheType;
+    constructor Create(const AID: Integer; const AName: string; const ASerialNo: string; AClotheType: TClothesType);
+  end;
+
+implementation
+
+{ ClotheType }
+
+procedure TClothesType.SetID(const Value: Integer);
+begin
+  FID := Value;
+end;
+
+procedure TClothsesType.SetName(const Value: string);
+begin
+  FName := Value;
+end;
+
+{ TClothe }
+
+constructor TClothes.Create(const AID: Integer; const AName: string; const ASerialNo: string; AClotheType: TClotheType);
+begin
+  inherited Create;
+  FID := AID;
+  FName := AName;
+  FSerialNo := ASerialNo;
+  FClotheType := AClotheType;
+end;
+
+procedure TClothes.SetID(const Value: Integer);
+begin
+  FID := Value;
+end;
+
+procedure TClothes.SetName(const Value: string);
+begin
+  FName := Value;
+end;
+
+procedure TClothes.SetSerialNo(const Value: string);
+begin
+  FSerialNo := Value;
+end;
+
+end.

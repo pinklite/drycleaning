@@ -1,0 +1,86 @@
+unit Connection.Model;
+
+interface
+
+uses
+  System.SysUtils, System.IniFiles,
+  Data.DB, Data.SqlExpr,
+  Common.Consts, Common.Types, Common.Model, Connection.Utils;
+
+type
+  TConnectionModel = class
+  private
+    class var FHost: string;
+    class var FPort: Word;
+    class var FDatabase: string;
+
+    class var FSQLConnection: TSQLConnection;
+
+    class procedure SetHost(const Value: string); static;
+    class procedure SetPort(const Value: Word); static;
+    class procedure SetDatabase(const Value: string); static;
+
+    class procedure Init;
+
+  public
+    class property Host: string read FHost write SetHost;
+    class property Port: Word read FPort write SetPort;
+    class property Database: string read FDatabase write SetDatabase;
+
+    class function GetSQLConnection: TSQLConnection;
+  end;
+
+implementation
+
+{ TConnectionModel }
+
+class function TConnectionModel.GetSQLConnection: TSQLConnection;
+begin
+
+end;
+
+class procedure TConnectionModel.Init;
+var
+  AConfFile: TIniFile;
+  fr: TFunctionResult;
+  dbp: TDbParm;
+  zbdp: TZebedeeParm;
+begin
+
+  AConfFile := TIniFile.Create(TCommonModel.ConfigFileName);
+  try
+    FHost := AConfFile.ReadString(CONF_FILE_DB_SECTION, 'Host', 'localhost');
+    FPort := AConfFile.ReadInteger(CONF_FILE_DB_SECTION, 'Port', 3050);
+    FDatabase := AConfFile.ReadString(CONF_FILE_DB_SECTION, 'Database', '');
+  finally
+    AConfFile.Free;
+  end;
+
+  dbp.AHost := FHost;
+  dbp.APort := IntToStr(FPort);
+  dbp.ADatabase := FDatabase;
+
+  FSQLConnection := TSQLConnection.Create(nil);
+  fr := SetSQLConParm(dbp, zbdp, FSQLConnection);
+end;
+
+class procedure TConnectionModel.SetDatabase(const Value: string);
+begin
+  FDatabase := Value;
+end;
+
+class procedure TConnectionModel.SetHost(const Value: string);
+begin
+  FHost := Value;
+end;
+
+class procedure TConnectionModel.SetPort(const Value: Word);
+begin
+  FPort := Value;
+end;
+
+initialization
+  TConnectionModel.Init;
+
+
+end.

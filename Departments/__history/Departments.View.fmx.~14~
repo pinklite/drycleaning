@@ -1,0 +1,55 @@
+inherited DepartmentsForm: TDepartmentsForm
+  DesignerMasterStyle = 0
+  inherited pnlFooter: TPanel
+    TabOrder = 1
+  end
+  object Header1: THeader
+    Sides = [Top, Left, Bottom, Right]
+    Position.X = 256.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 633.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+  object GridBindSourceDB1: TGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 8.000000000000000000
+    Position.Y = 224.000000000000000000
+    Size.Width = 881.000000000000000000
+    Size.Height = 329.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Viewport.Width = 877.000000000000000000
+    Viewport.Height = 304.000000000000000000
+  end
+  object btnNew: TButton
+    Position.X = 472.000000000000000000
+    Position.Y = 136.000000000000000000
+    TabOrder = 8
+    Text = 'New'
+  end
+  object btnEdit: TButton
+    Position.X = 560.000000000000000000
+    Position.Y = 136.000000000000000000
+    TabOrder = 7
+    Text = 'Edit'
+    OnClick = btnEditClick
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 92
+    Top = 77
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    FieldDefs = <>
+    ScopeMappings = <>
+    OnCreateAdapter = PrototypeBindSource1CreateAdapter
+    Left = 88
+    Top = 128
+  end
+end

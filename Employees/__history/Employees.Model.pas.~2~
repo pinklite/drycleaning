@@ -1,0 +1,23 @@
+unit Employees.Model;
+
+interface
+
+type
+  TEmployeesModel = class
+  private
+    FID: Integer;
+    procedure SetID(const Value: Integer);
+  public
+    property ID: Integer read FID write SetID;
+  end;
+
+implementation
+
+{ TEmployeesModel }
+
+procedure TEmployeesModel.SetID(const Value: Integer);
+begin
+  FID := Value;
+end;
+
+end.

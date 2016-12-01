@@ -1,0 +1,120 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{CE818CD0-3E78-4B2B-9CEE-AF4238BB9D17}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Core.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Common.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Database.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Departments.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Clothes.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Employees.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="EmployeesClothes.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Test.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Core">
+        <MSBuild Projects="Core.dproj"/>
+    </Target>
+    <Target Name="Core:Clean">
+        <MSBuild Projects="Core.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Core:Make">
+        <MSBuild Projects="Core.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Common">
+        <MSBuild Projects="Common.dproj"/>
+    </Target>
+    <Target Name="Common:Clean">
+        <MSBuild Projects="Common.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Common:Make">
+        <MSBuild Projects="Common.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Database">
+        <MSBuild Projects="Database.dproj"/>
+    </Target>
+    <Target Name="Database:Clean">
+        <MSBuild Projects="Database.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Database:Make">
+        <MSBuild Projects="Database.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Departments">
+        <MSBuild Projects="Departments.dproj"/>
+    </Target>
+    <Target Name="Departments:Clean">
+        <MSBuild Projects="Departments.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Departments:Make">
+        <MSBuild Projects="Departments.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Clothes">
+        <MSBuild Projects="Clothes.dproj"/>
+    </Target>
+    <Target Name="Clothes:Clean">
+        <MSBuild Projects="Clothes.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Clothes:Make">
+        <MSBuild Projects="Clothes.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Employees">
+        <MSBuild Projects="Employees.dproj"/>
+    </Target>
+    <Target Name="Employees:Clean">
+        <MSBuild Projects="Employees.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Employees:Make">
+        <MSBuild Projects="Employees.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="EmployeesClothes">
+        <MSBuild Projects="EmployeesClothes.dproj"/>
+    </Target>
+    <Target Name="EmployeesClothes:Clean">
+        <MSBuild Projects="EmployeesClothes.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EmployeesClothes:Make">
+        <MSBuild Projects="EmployeesClothes.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Test">
+        <MSBuild Projects="Test.dproj"/>
+    </Target>
+    <Target Name="Test:Clean">
+        <MSBuild Projects="Test.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Test:Make">
+        <MSBuild Projects="Test.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Core;Common;Database;Departments;Clothes;Employees;EmployeesClothes;Test"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Core:Clean;Common:Clean;Database:Clean;Departments:Clean;Clothes:Clean;Employees:Clean;EmployeesClothes:Clean;Test:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Core:Make;Common:Make;Database:Make;Departments:Make;Clothes:Make;Employees:Make;EmployeesClothes:Make;Test:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

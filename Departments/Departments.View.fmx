@@ -1,0 +1,150 @@
+inherited DepartmentsForm: TDepartmentsForm
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  inherited pnlFooter: TPanel
+    TabOrder = 1
+  end
+  object Header1: THeader
+    Sides = [Top, Left, Bottom, Right]
+    Position.X = 256.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 633.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+  object GridBindSourceDB1: TGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 8.000000000000000000
+    Position.Y = 360.000000000000000000
+    Size.Width = 881.000000000000000000
+    Size.Height = 201.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Viewport.Width = 877.000000000000000000
+    Viewport.Height = 176.000000000000000000
+  end
+  object btnNew: TButton
+    Position.X = 720.000000000000000000
+    Position.Y = 200.000000000000000000
+    TabOrder = 8
+    Text = 'New'
+    OnClick = btnNewClick
+  end
+  object btnEdit: TButton
+    Position.X = 808.000000000000000000
+    Position.Y = 200.000000000000000000
+    TabOrder = 6
+    Text = 'Edit'
+    OnClick = btnEditClick
+  end
+  object edtID: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 9
+    Text = '0'
+    Position.X = 24.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object edtTitle: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 7
+    Position.X = 24.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object edtUpdtm: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Text = '30.12.1899'
+    Position.X = 24.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object chkIsActive: TCheckBox
+    Position.X = 24.000000000000000000
+    Position.Y = 168.000000000000000000
+    TabOrder = 10
+    Text = 'Is Active'
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = dmDepartments.cdsDepartments
+    ScopeMappings = <>
+    Left = 136
+    Top = 24
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 36
+    Top = 21
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = GridBindSourceDB1
+      Columns = <>
+    end
+    object lnkcntrltfld1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'ID'
+      Control = edtID
+      Track = False
+    end
+    object lnkcntrltfld2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'Title'
+      Control = edtTitle
+      Track = False
+    end
+    object lnkcntrltfld3: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'UpdateTime'
+      Control = edtUpdtm
+      Track = False
+    end
+    object lnkcntrltfld4: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'IsActive'
+      Control = chkIsActive
+      Track = True
+    end
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    FieldDefs = <
+      item
+        Name = 'ID'
+        FieldType = ftInteger
+        ReadOnly = False
+      end
+      item
+        Name = 'Title'
+        ReadOnly = False
+      end
+      item
+        Name = 'IsActive'
+        FieldType = ftBoolean
+        ReadOnly = False
+      end
+      item
+        Name = 'UpdateTime'
+        FieldType = ftDateTime
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    Left = 416
+    Top = 160
+  end
+end

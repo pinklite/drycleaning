@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.174,=fmx.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.494,=C:\Projects\drycleaning\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.417,C:\Projects\drycleaning\Unit2.pas=C:\Projects\drycleaning\Departments\Departments.View.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.871,C:\Projects\drycleaning\Departments\DepartmentsReg.View.fmx=C:\Projects\drycleaning\Unit2.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.209,=dsnap.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.871,C:\Projects\drycleaning\Departments\DepartmentsReg.View.pas=C:\Projects\drycleaning\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.294,=Database.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.229,=bindcomp.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.202,=Common.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.447,C:\Projects\drycleaning\Unit2.pas=C:\Projects\drycleaning\Departments\Departments.DataModule.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.317,=C:\Projects\drycleaning\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.491,=C:\Projects\drycleaning\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.066,=Connection.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.447,C:\Projects\drycleaning\Unit2.dfm=C:\Projects\drycleaning\Departments\Departments.DataModule.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.247,=bindcompfmx.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.798,=rtl.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.404,C:\Projects\drycleaning\Departments.dproj=C:\Users\Zafar\Documents\Embarcadero\Studio\Projects\Package1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.417,C:\Projects\drycleaning\Unit2.fmx=C:\Projects\drycleaning\Departments\Departments.View.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.191,=bindengine.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.519,=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.844,=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.906,=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.134,C:\Projects\drycleaning\Departments\Departments.Classes.pas=C:\Projects\drycleaning\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.199,C:\Projects\drycleaning\Unit1.pas=C:\Projects\drycleaning\Departments\Departments.Model.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.343,C:\Projects\drycleaning\Unit1.pas=C:\Projects\drycleaning\Departments\Departments.ViewModel.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,46 @@
+unit Departments.Classes;
+
+interface
+
+type
+  TDepartment = class
+  private
+    FTitle: string;
+    FID: Integer;
+    FIsActive: Boolean;
+    procedure SetID(const Value: Integer);
+    procedure SetTitle(const Value: string);
+    function GetIsValid: Boolean;
+    procedure SetIsActive(const Value: Boolean);
+  public
+    property ID: Integer read FID write SetID;
+    property Title: string read FTitle write SetTitle;
+    property IsActive: Boolean read FIsActive write SetIsActive;
+    property IsValid: Boolean read GetIsValid;
+  end;
+
+implementation
+
+{ TDepartment }
+
+function TDepartment.GetIsValid: Boolean;
+begin
+   Result := Title <> '';
+end;
+
+procedure TDepartment.SetID(const Value: Integer);
+begin
+  FID := Value;
+end;
+
+procedure TDepartment.SetIsActive(const Value: Boolean);
+begin
+  FIsActive := Value;
+end;
+
+procedure TDepartment.SetTitle(const Value: string);
+begin
+  FTitle:= Value;
+end;
+
+end.

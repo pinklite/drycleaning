@@ -1,0 +1,18 @@
+unit Departments.ViewModel;
+
+interface
+
+uses
+  Departments.Model;
+
+type
+  TDepartmentsViewModel = class
+  private
+    FModel:
+  public
+//    constructor Create(AModel: );
+  end;
+
+implementation
+
+end.
